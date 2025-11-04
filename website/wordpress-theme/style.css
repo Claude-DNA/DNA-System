@@ -1,0 +1,396 @@
+/*
+Theme Name: Claude DNA
+Author: Claudedna
+Description: Custom theme based on uploaded site design
+Version: 1.0
+*/
+
+/* Claude DNA Website - Clean, warm, spacious aesthetic */
+
+:root {
+  --bg-primary: #f7f5f2;
+  --bg-secondary: #ffffff;
+  --text-primary: #2c2c2c;
+  --text-secondary: #666666;
+  --accent: #c17d4a;
+  --border: #e0dcd6;
+  --code-bg: #2c2c2c;
+  --code-text: #f7f5f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Make all elements fit smaller screens */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure images and videos resize */
+img, iframe, video, embed, object {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto;
+}
+
+/* Prevent tables from breaking layout */
+table {
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Prevent long words from breaking layout */
+p, li, div, span, a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+nav a.active {
+  color: var(--accent);
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1rem 0;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.75rem 0;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code blocks */
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  word-break: break-all;
+}
+
+p code {
+  background-color: var(--border);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+/* Sections */
+section {
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.intro {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.highlight {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent);
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+  width: 100%;
+}
+
+/* Lists */
+ul, ol {
+  margin: 1rem 0 1.5rem 2rem;
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  max-width: 800px;
+  margin: 4rem auto 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  width: 100%;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-radius: 6px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* WordPress specific */
+.entry-content {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.site-header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+
+.site-footer {
+  background-color: var(--bg-primary);
+  width: 100%;
+}
+
+/* WordPress blocks */
+.wp-block-image,
+.wp-block-embed,
+.wp-block-video {
+  max-width: 100% !important;
+}
+
+.wp-block-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Make text comfortable on phones */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  h3 {
+    font-size: 1.1em;
+  }
+  
+  p, li {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  nav {
+    padding: 0.75rem 1rem;
+  }
+  
+  nav ul {
+    gap: 0.75rem;
+    font-size: 0.9em;
+  }
+  
+  main {
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+  
+  .intro,
+  .highlight {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  pre {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  section {
+    margin: 2rem 0;
+  }
+  
+  .wp-block-columns {
+    flex-direction: column !important;
+  }
+  
+  .wp-block-column {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  button, .wp-block-button__link {
+    width: 100%;
+  }
+  
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-left: 0;
+  }
+  
+  footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+  
+  h1 {
+    font-size: 1.4em;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  
+  nav ul {
+    gap: 0.5rem;
+    font-size: 0.85em;
+  }
+  
+  main {
+    padding: 0 0.75rem;
+  }
+  
+  .intro,
+  .highlight {
+    padding: 0.75rem;
+  }
+}
+
+/* MOBILE OVERRIDES — keep this at the end of style.css */
+@media (max-width: 768px) {
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+  /* Typography (high specificity + !important) */
+  .entry-content h1, .wp-site-blocks h1, .wp-block-heading h1, h1 { 
+    font-size: 1.75rem !important; line-height: 1.2 !important; 
+  }
+  .entry-content h2, .wp-site-blocks h2, .wp-block-heading h2, h2 { 
+    font-size: 1.25rem !important; line-height: 1.3 !important; 
+  }
+  .entry-content p, .entry-content li, p, li { 
+    font-size: 1rem !important; line-height: 1.6 !important; 
+  }
+
+  /* Layout + padding */
+  .wp-site-blocks, .entry-content, main, nav { 
+    padding-left: 16px !important; padding-right: 16px !important; 
+  }
+
+  /* Columns stack */
+  .wp-block-columns { display: block !important; }
+  .wp-block-column { width: 100% !important; max-width: 100% !important; }
+
+  /* Nav on mobile */
+  nav ul { display: flex !important; flex-direction: column !important; gap: .5rem !important; }
+  nav li { list-style: none !important; }
+}
+

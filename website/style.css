@@ -1,0 +1,198 @@
+/* Claude DNA Website - Clean, warm, spacious aesthetic */
+
+:root {
+  --bg-primary: #f7f5f2;
+  --bg-secondary: #ffffff;
+  --text-primary: #2c2c2c;
+  --text-secondary: #666666;
+  --accent: #c17d4a;
+  --border: #e0dcd6;
+  --code-bg: #2c2c2c;
+  --code-text: #f7f5f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+nav a.active {
+  color: var(--accent);
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1rem 0;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.75rem 0;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code blocks */
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+p code {
+  background-color: var(--border);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+/* Sections */
+section {
+  margin: 3rem 0;
+}
+
+.intro {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.highlight {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent);
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Lists */
+ul, ol {
+  margin: 1rem 0 1.5rem 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  max-width: 800px;
+  margin: 4rem auto 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-radius: 6px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  main {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+}

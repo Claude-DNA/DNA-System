@@ -1,0 +1,76 @@
+# --- Core Python ignores ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Virtual environments ---
+.venv/
+env/
+venv/
+ENV/
+
+# --- Jupyter and cache ---
+.ipynb_checkpoints/
+*.cache
+*.log
+*.tmp
+*.bak
+
+# --- Data and derived artifacts ---
+data/derived/
+analysis/__pycache__/
+**/outputs/
+**/exports/
+**/results/
+*.csv
+*.jsonl
+
+# --- IDE / system files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Git LFS large files ---
+*.zip
+*.tar
+*.tar.gz
+*.mp4
+*.mp3
+*.wav
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# --- Optional: exclude hidden OS folders on Windows / macOS ---
+desktop.ini
+ehthumbs.db
+
+# --- Local notes or private drafts ---
+_private/
+*.secret
+*.draft
+.tmp.driveupload/
+~$*
+*.tmp
+.venv/
+.venv312/
+env/
+venv/
+ENV/
+
+
+.venv/
+.venv312/
+env/
+venv/
+
+.venv/
+.venv312/
+env/
+venv/
+.tmp.driveupload/
+~$*
+*.tmp

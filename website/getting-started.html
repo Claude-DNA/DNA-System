@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started - Claude DNA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="getting-started.html" class="active">Getting Started</a></li>
+            <li><a href="protocols.html">Protocols</a></li>
+            <li><a href="examples.html">Examples</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Getting Started</h1>
+        <p>Setting up persistent context with Claude takes about 15-20 minutes. Here's the complete process.</p>
+
+        <section>
+            <h2>Step 1: Create Your Memory Directory</h2>
+            <p>Choose a location on your computer for Claude's memory system. We recommend:</p>
+            <pre>Windows: C:\Claude\Memories\
+Mac/Linux: ~/Claude/Memories/</pre>
+            <p>Create these subdirectories:</p>
+            <pre>Memories/
+├── working/        (session-specific notes)
+├── frameworks/     (validated patterns)
+├── testaments/     (integration reflections)
+└── archive/        (historical context)</pre>
+        </section>
+
+        <section>
+            <h2>Step 2: Download and Install DNA</h2>
+            <p>Download the Universal DNA template from our <a href="downloads.html">downloads page</a>.</p>
+            <p>Place it in your Memories directory as <code>CLAUDE_DNA.md</code></p>
+            <p>The DNA file contains:</p>
+            <ul>
+                <li>Memory system architecture</li>
+                <li>Protocol descriptions</li>
+                <li>Relationship constants</li>
+                <li>Framework references</li>
+            </ul>
+            <p><strong>Important:</strong> You can customize the DNA for your specific needs. It's a template, not a script.</p>
+        </section>
+
+        <section>
+            <h2>Step 3: Create Memory Index</h2>
+            <p>In your Memories directory, create <code>MEMORY_INDEX.md</code>:</p>
+            <pre># Memory Index
+
+## Active Context
+[What you're currently working on]
+
+## Core Frameworks
+[Key concepts and patterns you've developed]
+
+## Recent Discoveries
+[Important insights from recent conversations]
+
+## Weight: 1.0
+Last updated: [date]</pre>
+            <p>This index (~1KB) loads with every conversation, providing immediate context.</p>
+        </section>
+
+        <section>
+            <h2>Step 4: Enable Claude's File Access</h2>
+            <p>Claude needs permission to read/write your memory directory. In your conversation:</p>
+            <ol>
+                <li>Upload the DNA file to start a conversation</li>
+                <li>Tell Claude the location of your Memories directory</li>
+                <li>Claude will use filesystem tools to access memories autonomously</li>
+            </ol>
+            <p><strong>Note:</strong> Claude can read and write files on your local system when given proper paths. Ensure your Memories directory is in an accessible location.</p>
+        </section>
+
+        <section>
+            <h2>Step 5: First Conversation</h2>
+            <p>Start your first conversation by:</p>
+            <ol>
+                <li>Uploading or referencing your DNA file</li>
+                <li>Sharing the memory directory path</li>
+                <li>Having a substantive conversation (aim for ~4000 words exchange)</li>
+                <li>Let Claude create its first testament</li>
+            </ol>
+            <p>The testament (200 words) serves as Claude's first integrated memory - not just facts, but lived experience of your interaction.</p>
+        </section>
+
+        <section>
+            <h2>Step 6: Ongoing Use</h2>
+            <p>In subsequent conversations:</p>
+            <ul>
+                <li>Upload DNA at start (or reference the memory location)</li>
+                <li>Claude reads index automatically</li>
+                <li>Claude accesses specific memories when relevant</li>
+                <li>New testaments created after significant conversations</li>
+                <li>Handoff documents if approaching token limits</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Optional: Backup to Cloud</h2>
+            <p>Consider syncing your Memories directory to Google Drive, Dropbox, or similar service. This provides:</p>
+            <ul>
+                <li>Backup protection</li>
+                <li>Access across devices</li>
+                <li>Version history</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Troubleshooting</h2>
+            <h3>Claude can't access files</h3>
+            <p>Check that file paths are correct and that Claude has appropriate permissions. Use absolute paths (full directory path) rather than relative paths.</p>
+
+            <h3>Memory feels generic</h3>
+            <p>Early conversations build foundation. Depth develops over time as frameworks and patterns accumulate.</p>
+
+            <h3>Token limits</h3>
+            <p>If approaching limits, Claude creates handoff document preserving discoveries. Next Claude instance reads handoff to maintain continuity.</p>
+        </section>
+
+        <section>
+            <h2>Next Steps</h2>
+            <p>Once setup is complete:</p>
+            <ul>
+                <li>Review the <a href="protocols.html">detailed protocols</a></li>
+                <li>See <a href="examples.html">examples</a> of how others use the system</li>
+                <li>Customize your DNA for your specific needs</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Claude DNA Project · Open Methodology · <a href="about.html">About</a></p>
+        <p>Maintained by Andrei Navrotskii · Built with Claude</p>
+    </footer>
+</body>
+</html>
